@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RERA SRLS — Industrial Machinery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="logo">RERA <span>SRLS</span></div>
+    <nav>
+      <a href="#categories">Machinery</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <h1>Reliable Industrial Machinery,<br>Ready to Work.</h1>
+    <p>RERA SRLS resells and refurbishes lathes, presses, mills and other heavy
+       machinery for workshops and factories across Europe. Quality equipment,
+       fair prices, fast delivery.</p>
+    <div class="hero-actions">
+      <a href="#categories" class="btn btn-primary">Browse Machinery</a>
+      <a href="#contact" class="btn btn-secondary">Request a Quote</a>
+    </div>
+  </div>
+</section>
+
+<section id="categories" class="categories">
+  <div class="container">
+    <h2>Choose Your Category</h2>
+    <p class="section-sub">Select a machine type to see what we currently have available.</p>
+
+    <div class="category-grid">
+
+      <button class="category-card" data-category="lathes">
+        <div class="category-icon">⚙️</div>
+        <h3>Lathes</h3>
+        <p>Manual and CNC lathes for precision turning.</p>
+      </button>
+
+      <button class="category-card" data-category="presses">
+        <div class="category-icon">🛠️</div>
+        <h3>Presses</h3>
+        <p>Hydraulic and mechanical presses, various tonnages.</p>
+      </button>
+
+      <button class="category-card" data-category="milling">
+        <div class="category-icon">🔩</div>
+        <h3>Milling Machines</h3>
+        <p>Vertical and horizontal mills for metalworking.</p>
+      </button>
+
+      <button class="category-card" data-category="welding">
+        <div class="category-icon">🔥</div>
+        <h3>Welding Equipment</h3>
+        <p>Industrial welders and cutting stations.</p>
+      </button>
+
+      <button class="category-card" data-category="forklifts">
+        <div class="category-icon">🏗️</div>
+        <h3>Forklifts &amp; Handling</h3>
+        <p>Forklifts, hoists and material handling gear.</p>
+      </button>
+
+      <button class="category-card" data-category="other">
+        <div class="category-icon">📦</div>
+        <h3>Other Machinery</h3>
+        <p>Compressors, saws and more. Ask us anything.</p>
+      </button>
+
+    </div>
+
+    <div id="category-result" class="category-result"></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container">
+    <h2>About RERA SRLS</h2>
+    <p>We are a family-run reseller of used and refurbished industrial machinery,
+       based in Italy. For over a decade we've helped workshops, machine shops
+       and factories find dependable equipment at a fraction of the cost of new.
+       Every machine is inspected before it leaves our warehouse.</p>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Get In Touch</h2>
+    <p class="section-sub">Tell us what you're looking for and we'll get back to you with options and pricing.</p>
+    <form class="contact-form" onsubmit="return false;">
+      <input type="text" placeholder="Your name" required>
+      <input type="email" placeholder="Your email" required>
+      <textarea placeholder="What machinery are you looking for?" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Send Request</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>&copy; 2026 RERA SRLS. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
