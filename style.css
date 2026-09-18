@@ -45,13 +45,15 @@ a {
 }
 
 .top-banner-track {
-  display: inline-flex;
+  display: flex;
   width: max-content;
   animation: banner-scroll 16s linear infinite;
+  -webkit-animation: banner-scroll 16s linear infinite;
 }
 
 .top-banner-group {
-  display: inline-flex;
+  display: flex;
+  flex-shrink: 0;
   align-items: center;
   gap: 12px;
   padding-right: 12px;
