@@ -64,6 +64,12 @@ a {
   opacity: 0.6;
 }
 
+.top-banner-static {
+  display: none;
+  color: var(--dark);
+  font-weight: 700;
+}
+
 @keyframes banner-scroll {
   from {
     transform: translateX(0);
@@ -305,6 +311,15 @@ nav a:hover {
 }
 
 @media (max-width: 600px) {
+  .top-banner-track {
+    display: none;
+  }
+
+  .top-banner-static {
+    display: block;
+    text-align: center;
+  }
+
   .container {
     padding: 0 16px;
   }
