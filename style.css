@@ -33,6 +33,49 @@ a {
   text-decoration: none;
 }
 
+/* Top banner */
+.top-banner {
+  background: var(--accent);
+  color: var(--dark);
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 8px 0;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.top-banner-track {
+  display: inline-flex;
+  width: max-content;
+  animation: banner-scroll 16s linear infinite;
+}
+
+.top-banner-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding-right: 12px;
+}
+
+.top-banner-sep {
+  opacity: 0.6;
+}
+
+@keyframes banner-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .top-banner-track {
+    animation: none;
+  }
+}
+
 /* Header */
 .site-header {
   position: sticky;
